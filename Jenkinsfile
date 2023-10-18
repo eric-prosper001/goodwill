@@ -3,31 +3,31 @@ pipeline{
     stages{
         stage('Prosper Stage'){
             steps{
-                sh '/var/lib/jenkins/workspace/Bachanou/ajtest.sh'
+                sh 'Action1'
             }
         }
         stage('parallel'){
         parallel{
         stage('Erica Stage'){
             steps{
-                sh '/var/lib/jenkins/workspace/Bachanou/ajtest.sh'
+                sh 'df -h'
             }
         }
         stage('Bill Stage'){
             steps{
-                sh '/var/lib/jenkins/workspace/Bachanou/ajtest.sh'
+                sh 'lscpu'
             }
         }
         }
         }
         stage('Jonas Stage'){
             steps{
-                sh '/var/lib/jenkins/workspace/Bachanou/ajtest.sh'
+                sh 'ls'
             }
         }
         stage('Gilbert Stage'){
             steps{
-                sh '/var/lib/jenkins/workspace/Bachanou/ajtest.sh'
+                sh 'Action2'
             }
         }
     }
